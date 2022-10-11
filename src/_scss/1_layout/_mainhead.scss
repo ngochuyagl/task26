@@ -1,0 +1,320 @@
+.c-heading {
+    text-align: center;
+    font-family: $noto;
+    margin-bottom: 130px;
+
+    &__title {
+        font-size: 3.6rem;
+        line-height: calc(43.03/36);
+        margin-bottom: 135px;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1535px;
+
+
+        li {
+            width: calc((100% - 114px)/3);
+        }
+    }
+
+
+
+
+    &__itemnumber {
+        position: relative;
+        font-family: $roboto;
+        margin-right: 188px;
+        margin-bottom: 28px;
+
+
+        :first-child {
+            font-size: 21.3rem;
+            font-weight: 900;
+            color: #ededed;
+            line-height: 0;
+        }
+
+        :last-child {
+            font-size: 2.4rem;
+            letter-spacing: 0.25em;
+            position: absolute;
+            bottom: 35%;
+            left: 51%;
+            transform: translateX(-50%);
+            color: #c7c7c7;
+        }
+    }
+
+    &__itemtext {
+        display: flex;
+        height: 125px;
+        background-color: #000;
+        border-radius: 10px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: #fff;
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 30px solid #000;
+            top: -28px;
+            left: 135px;
+            position: absolute;
+        }
+
+        p {
+
+            font-size: 2.4rem;
+            line-height: calc(28.8/24);
+            color: #fff;
+            letter-spacing: 0;
+            font-family: $noto serif;
+            font-weight: 700;
+        }
+
+        span {
+            position: absolute;
+            width: 210px;
+            height: 35px;
+            border-radius: 25px;
+            background-color: #7a89a8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            line-height: calc(21.6/18);
+            letter-spacing: 1px;
+            top: 0;
+            right: -2%;
+            transform: translateY(-35%);
+            font-family: $noto;
+            font-weight: 400;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    .c-heading__title {
+        font-size: 3rem;
+    }
+
+    .c-heading__itemnumber :first-child {
+        font-size: 15rem;
+    }
+
+    .c-heading__itemnumber :last-child {
+        font-size: 1.8rem;
+    }
+
+    .c-heading__itemtext {
+        height: 100px;
+
+        p {
+            font-size: 1.8rem;
+            padding: 10px;
+        }
+
+        span {
+            font-size: 1.3rem;
+            width: 165px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .c-heading {
+        .c-heading__title {
+            font-size: 2.5rem;
+        }
+
+        .c-heading__list {
+            flex-direction: column;
+            align-items: center;
+            gap: 150px;
+
+            li {
+                width: 50%;
+            }
+        }
+
+        .c-heading__itemtext {
+            &::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .c-heading__itemnumber {
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-heading {
+        .u-itemtext2 span {
+            left: -2%;
+        }
+
+        .u-itemtext1::before {
+
+            left: 30%;
+        }
+
+        .u-itemtext3::before {
+
+            left: 30%;
+        }
+
+        .u-itemtext2::before {
+
+            left: 60%;
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-heading {
+        .c-heading__title {
+            letter-spacing: 1.5px;
+            margin-bottom: 87px;
+            font-size: 1.5rem;
+        }
+
+        .c-heading__itemnumber {
+            margin-bottom: 17px;
+        }
+
+        .c-heading__itemnumber :first-child {
+            font-size: 14.8rem;
+        }
+
+        .u-number1,
+        .u-number3 {
+            margin-left: -114px;
+        }
+
+        .u-number2 {
+            margin-left: 114px;
+        }
+
+        .c-heading__itemnumber :last-child {
+            bottom: 36%;
+        }
+
+        .c-heading__list li {
+            margin: 0 auto;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .c-heading__list {
+            gap: 93px;
+        }
+
+        .c-heading__itemtext {
+            max-width: 329px;
+            height: 87px;
+            border-radius: 5px;
+
+            &::before {
+                border-left: 2px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 22px solid #000;
+                top: -20px;
+                left: 29%;
+            }
+        }
+
+        .u-itemtext2 span {
+            left: -2%;
+        }
+
+        .u-itemtext1::before {
+            transform: translateX(0);
+            left: 30%;
+        }
+
+        .u-itemtext3::before {
+            transform: translateX(0);
+            left: 30%;
+        }
+
+        .u-itemtext2::before {
+
+            left: 60%;
+            transform: rotateY(180deg);
+        }
+
+        .u-itemtext2::before {
+            left: 66%;
+        }
+
+        .c-heading__itemtext span {
+            width: 150px;
+            letter-spacing: 0;
+            height: 24px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .c-heading {
+        margin-bottom: 77px;
+
+        .u-number1 {
+            margin-bottom: 16px;
+        }
+
+        .u-itemtext1::before,
+        .u-itemtext3::before {
+            left: 29%;
+        }
+
+        .c-heading__itemtext p {
+            font-size: 1.65rem;
+        }
+
+        .u-itemtext1 p {
+            letter-spacing: 0.3px;
+        }
+
+        .u-itemtext2 {
+            margin-bottom: 2px;
+        }
+
+
+        .u-itemtext3 p {
+            letter-spacing: -0.2px;
+            margin-top: 2px;
+            margin-left: -6px;
+
+        }
+
+        .u-number1,
+        .u-number3 {
+            margin-left: -135px;
+        }
+
+        .u-number2 {
+            margin-left: 135px;
+        }
+    }
+}

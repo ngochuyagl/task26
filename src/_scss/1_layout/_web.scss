@@ -1,0 +1,351 @@
+.c-web {
+    font-family: $noto;
+    text-align: center;
+    padding-top: 75px;
+    max-width: 1741px;
+    margin-inline: auto;
+    margin-bottom: 120px;
+    padding-inline: 30px;
+
+    .c-web__title {
+        font-size: 3.4rem;
+        font-weight: 400;
+        line-height: calc(41/34);
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+
+
+        span {
+            font-size: 4.6rem;
+            font-family: $second-font;
+
+        }
+    }
+
+    .c-web__desc {
+        font-size: 2.7rem;
+        line-height: calc(37/27);
+        font-weight: 300;
+        width: 100%;
+        margin: 0 auto;
+        letter-spacing: 2.4px;
+        margin-bottom: 75px;
+
+
+    }
+
+    .c-web__list {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .c-web__item {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 256px) / 5);
+        height: 243px;
+        color: #fff;
+        cursor: pointer;
+
+        position: relative;
+
+        &:not(:last-child)::before {
+            content: "";
+            background: url(/assets/img/1x/SVG/iconarrow.svg) top right no-repeat;
+            width: 9px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            right: -37px;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    .c-web__top {
+        display: block;
+        margin-bottom: 27px;
+        margin-top: 58px;
+
+        img {
+            width: 41px;
+        }
+    }
+
+    .u-webcus1 {
+        margin-bottom: 21px;
+
+
+    }
+
+    .u-webcus2 {
+        margin-top: 50px;
+        margin-bottom: 22px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .u-webcus3 {
+        margin-bottom: 20px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .u-webcus4 {
+        margin-bottom: 20px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .u-webcus5 {
+        margin-bottom: 20px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .c-web__mid {
+        display: block;
+        font-weight: 400;
+        font-size: 2.1rem;
+        line-height: calc(37/21);
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        position: relative;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 236px;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+
+        }
+    }
+
+    .c-web__bot {
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .c-web {
+        .c-web__title {
+            font-size: 3rem;
+
+            span {
+                font-size: 4rem;
+            }
+        }
+
+        .c-web__desc {
+            font-size: 2rem;
+        }
+
+        .c-web__item {
+            width: calc((100% - 135px) / 5);
+            padding: 5px;
+        }
+
+        .c-web__item:not(:last-child)::before {
+            right: -15px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .c-web {
+        padding-top: 50px;
+        margin-bottom: 50px;
+
+        .c-web__title {
+            font-size: 2.5rem;
+
+            span {
+                font-size: 3.5rem;
+            }
+        }
+
+        .c-web__desc {
+            font-size: 1.8rem;
+        }
+
+        .c-web__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+
+
+        .c-web__item:not(:last-child)::before {
+            right: -30px;
+        }
+
+        .c-web__mid {
+            font-size: 1.8rem;
+        }
+
+        .c-web__item {
+            width: calc((100% - 135px) / 3);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-web {
+        padding-inline: 10px;
+        margin: 0 auto;
+
+        .c-web__title {
+            font-size: 1.7rem;
+
+            span {
+                font-size: 2.3rem;
+            }
+        }
+
+        .c-web__desc {
+            font-size: 1.35rem;
+        }
+
+        .c-web__list {
+            width: 90%;
+            margin-inline: auto;
+            margin-bottom: 50px;
+            justify-content: space-between;
+        }
+
+        .c-web__item {
+            width: calc((100% - 80px) / 2);
+            height: 200px;
+
+        }
+
+        .c-web__mid {
+            font-size: 1.05rem;
+        }
+
+        .c-web__bot {
+            font-size: 0.8rem;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .c-web {
+        padding-inline: 3px;
+        padding-top: 46px;
+
+        .c-web__title {
+            letter-spacing: 1.3px;
+            margin-bottom: 15px;
+        }
+
+        .c-web__desc {
+            letter-spacing: 1.3px;
+            margin-bottom: 37px;
+        }
+
+        .c-web__top {
+            margin-top: 22px;
+        }
+
+        .c-web__mid {
+            padding-bottom: 5px;
+            margin-bottom: 7px;
+
+            &::before {
+                width: 90%;
+            }
+        }
+
+        .c-web__bot {
+            letter-spacing: 0;
+        }
+
+        .c-web__list {
+            justify-content: stretch;
+            column-gap: 33px;
+            row-gap: 24px;
+            margin-bottom: 64px;
+        }
+
+        .c-web__item {
+            height: 111px;
+            width: calc((100% - 69px)/ 2);
+
+
+        }
+
+        .c-web__item:not(:last-child)::before {
+            height: 10px;
+            right: -21px;
+        }
+
+        .u-webcus1 {
+            margin-bottom: 7px;
+
+            img {
+
+                width: 21px;
+            }
+        }
+
+        .u-webcus2 {
+            margin-bottom: 7px;
+
+            img {
+
+                width: 18px;
+            }
+        }
+
+        .u-webcus3 {
+            margin-bottom: 7px;
+
+            img {
+
+                width: 18px;
+            }
+        }
+
+        .u-webcus4 {
+            margin-bottom: 7px;
+
+            img {
+
+                width: 18px;
+            }
+        }
+
+        .u-webcus5 {
+            margin-bottom: 7px;
+
+            img {
+
+                width: 19px;
+            }
+        }
+    }
+}

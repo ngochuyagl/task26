@@ -1,0 +1,353 @@
+.c-point {
+    background-color: #ededed;
+    position: relative;
+    max-width: 1741px;
+    margin: 0 auto;
+    width: 100%;
+
+    .u-mb {
+        display: none;
+    }
+
+    .c-point__head {
+        position: absolute;
+        display: flex;
+        top: 0;
+        transform: translateY(-50%);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+
+    }
+
+    .c-point__headImg {
+        flex-shrink: 0;
+        width: 50%;
+        text-align: center;
+        margin-top: -32px;
+    }
+
+    .c-point__headText {
+        margin-inline: auto;
+    }
+
+    .c-point__headTitle {
+        font-size: 8.2rem;
+        line-height: calc(99/82);
+        letter-spacing: 8.5px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        margin-top: 18px;
+        margin-left: -19px;
+
+    }
+
+    .c-point__headDesc {
+        font-size: 3.4rem;
+        line-height: calc(41/34);
+        margin-left: 230px;
+        font-weight: 400;
+        transform: translateY(16px);
+        float: right;
+        letter-spacing: -0.3px;
+
+        span {
+            font-size: 4.6rem;
+        }
+    }
+
+    .c-point__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 150px;
+        max-width: 1644px;
+        margin: 0 auto;
+        margin-bottom: 73px;
+        padding-inline: 30px;
+    }
+
+    .c-point__item {
+        font-family: $noto;
+        width: calc((100% - 75px)/ 4);
+        padding: 21px;
+        background-color: #fff;
+
+        min-height: 531px;
+    }
+
+    .c-point__itemImg {
+        width: 100%;
+        max-height: 258px;
+        height: 100%;
+        margin-bottom: 27px;
+
+    }
+
+    .c-point__itemTitle {
+        font-size: 2.3rem;
+        font-weight: 400;
+        line-height: calc(28/23);
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+
+    }
+
+    .c-point__itemDesc {
+        font-size: 1.9rem;
+        font-weight: 300;
+        line-height: calc(27/19);
+        letter-spacing: 1.7px;
+    }
+
+    .c-point__banner {
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 45px;
+        background-color: #fff;
+        padding-inline: 30px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .c-point {
+        .c-point__head {
+            padding-inline: 30px;
+        }
+
+        .c-point__headTitle {
+            font-size: 5rem;
+        }
+
+
+        .c-point__headDesc {
+            font-size: 2rem;
+            margin-left: 200px;
+
+            span {
+                font-size: 3rem;
+            }
+        }
+
+        .c-point__headTitle {
+            float: right;
+            letter-spacing: 4px;
+        }
+
+        .c-point__headImg {
+            width: 42%;
+        }
+
+        .c-point__item {
+            padding: 15px;
+            min-height: 455px;
+        }
+
+        .c-point__itemTitle {
+            font-size: 2.2rem;
+        }
+
+        .c-point__itemDesc {
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .c-point {
+        .c-point__headImg {
+            font-size: 40%;
+        }
+
+        .c-point__headTitle {
+            font-size: 4rem;
+        }
+
+        .c-point__headDesc {
+            margin-left: 0;
+        }
+
+
+
+        .c-point__list {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .c-point__item {
+            width: calc((50% - 20px));
+
+        }
+
+        .c-point__itemImg {
+            max-height: 100%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .c-point__banner {
+            margin-top: 75px;
+        }
+
+        .c-point__itemTitle {
+            font-size: 2rem;
+        }
+
+        .c-point__itemDesc {
+            font-size: 1.5rem;
+        }
+
+        .c-point__banner {
+            padding-top: 63px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-point {
+        position: relative;
+
+        .u-pc {
+            display: none;
+        }
+
+        .u-mb {
+            display: block;
+
+        }
+
+        .c-point__headImg {
+            position: absolute;
+            bottom: -15%;
+            right: 0;
+        }
+
+        .c-point__banner {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .c-point__headText {
+            margin-inline: 0;
+            margin-left: auto;
+        }
+
+        .c-point__head {
+            padding-inline: 10px;
+        }
+
+        .c-point__headTitle {
+            font-size: 3.05rem;
+            float: none;
+        }
+
+        .c-point__headDesc {
+            font-size: 1.25rem;
+
+
+            span {
+                font-size: 1.7rem;
+            }
+        }
+
+        .c-point__list {
+            padding-top: 90px;
+            gap: 15px;
+            position: relative;
+            padding-bottom: 80px;
+            padding-inline: 10px;
+        }
+
+        .c-point__itemTitle {
+            font-size: 1.1rem;
+            line-height: calc(13/11);
+
+        }
+
+        .c-point__itemDesc {
+            font-size: 0.95rem;
+        }
+
+        .c-point__item {
+            min-height: 290px;
+            width: calc(50% - 10px);
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .c-point {
+        .c-point__headTitle {
+            letter-spacing: 3px;
+            margin-right: 5px;
+        }
+
+        .c-point__headDesc {
+            transform: translateY(7px);
+            letter-spacing: 0;
+        }
+
+        .c-point__list {
+            padding-top: 74px;
+            padding-bottom: 48px;
+        }
+
+        .c-point__item {
+            padding: 11px 8px;
+            width: calc(50% - 10px);
+            min-height: 240px;
+        }
+
+        .c-point__itemImg {
+            margin-bottom: 12px;
+        }
+
+        .c-point__headImg {
+            bottom: -115px;
+            right: 0%;
+            width: 56%;
+        }
+
+        .c-point__itemTitle {
+            letter-spacing: 0.55px;
+            margin-bottom: 7px;
+
+        }
+
+        .c-point__itemDesc {
+
+            letter-spacing: 0.85px;
+            line-height: calc(13/9.5);
+        }
+
+        .c-point__banner {
+            padding-bottom: 16px;
+            padding-inline: 28px;
+            padding-top: 62px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .c-point {
+        .c-point__headImg {
+            right: 0;
+        }
+    }
+}

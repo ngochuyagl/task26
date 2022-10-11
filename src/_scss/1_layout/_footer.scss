@@ -1,0 +1,121 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    text-align: center;
+    max-width: 1256px;
+    margin: 0 auto;
+    padding-inline: 30px;
+
+    .u-mb {
+        display: none;
+    }
+
+    .c-footer__banner {
+        position: relative;
+        transform: translateX(2px);
+        margin-bottom: 91px;
+    }
+
+    .c-footer__link {
+        position: absolute;
+        top: 7px;
+        right: 30px;
+    }
+
+
+
+    .c-footer__title {
+        border: 1px #000 solid;
+        padding: 113px 0;
+        font-size: 4.8rem;
+        line-height: calc(57/48);
+        font-family: $oswa;
+        font-weight: 300;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .c-footer__logo {
+        display: block;
+        margin: 85px 0;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .c-footer {
+        .c-footer__banner {
+            margin-bottom: 50px;
+        }
+
+        .c-footer__title {
+            padding: 90px 0;
+        }
+
+        .c-footer__logo {
+            margin: 50px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-footer {
+        .u-pc {
+            display: none;
+        }
+
+        .u-mb {
+            display: block;
+        }
+
+        .c-footer__title {
+            font-size: 2.4rem;
+            padding: 75px 0;
+        }
+    }
+
+    .c-footer__logo {
+        img {
+            width: 20%;
+        }
+    }
+
+    .c-footer__banner {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .c-footer {
+        padding-inline: 28px;
+
+        .c-footer__banner {
+            width: 100%;
+            margin-bottom: 19px;
+
+            img {
+                transform: translateX(-1px);
+            }
+        }
+
+        .c-footer__title {
+            padding: 40px 0;
+            letter-spacing: 2.4px;
+        }
+
+        .c-footer__logo {
+            margin: 34px 0;
+
+            img {
+                width: 32%;
+            }
+        }
+    }
+}

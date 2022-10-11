@@ -1,0 +1,317 @@
+.c-map {
+    font-family: $noto;
+    margin-bottom: 88px;
+
+    .c-map__layout {
+        display: flex;
+
+
+    }
+
+    .c-map__left {
+        width: 50%;
+
+        .c-map__lmap {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .c-map__right {
+        width: 50%;
+        text-align: center;
+        padding-top: 139px;
+        background-color: #ededed;
+        padding-bottom: 124px;
+    }
+
+    .c-map__title {
+        font-size: 4.8rem;
+        font-weight: 300;
+        line-height: calc(58/48);
+        letter-spacing: 5px;
+        padding-bottom: 25px;
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: -58px;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 75px;
+            height: 1px;
+            background-color: #c8c5c4;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    .c-map__desc {
+        display: block;
+        font-size: 2.8rem;
+        line-height: calc(28/28);
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding-bottom: 94px;
+        margin-left: -58px;
+    }
+
+    .c-map__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+    .c-map__item {
+        margin-right: auto;
+        display: flex;
+        margin-bottom: 11px;
+
+        :first-child {
+            display: flex;
+            width: 120px;
+            height: 47px;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            background-color: #565f64;
+            color: #fff;
+            font-weight: 400;
+            // margin-left: 211px;
+            max-width: 120px;
+        }
+
+        :last-child {
+            display: inline-block;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            font-weight: 400;
+            margin-left: 21px;
+
+        }
+
+
+
+        .u-maplet2 {
+            letter-spacing: 2.2px;
+            margin-top: 5px;
+        }
+
+        .u-maplet3 {
+            display: block;
+            letter-spacing: 0.8px;
+            margin-top: 4px;
+        }
+
+    }
+
+    .u-map2 {
+        margin-bottom: 13px;
+    }
+
+    .u-mapcus {
+        margin-bottom: 8px;
+    }
+
+    .c-map__txt {
+        font-size: 1.5rem;
+        line-height: calc(27/15);
+        font-weight: 400;
+        margin-left: 97px;
+        letter-spacing: 1px;
+
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .c-map {
+        .c-map__title {
+            font-size: 4rem;
+            margin-left: 0;
+        }
+
+        .c-map__desc {
+            margin-left: 0;
+        }
+
+        .c-map__list {
+
+            max-width: 450px;
+        }
+
+        .c-map__item {}
+
+        .c-map__item :first-child {
+            font-size: 1.8rem;
+        }
+
+        .c-map__item :last-child {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .c-map {
+        margin-bottom: 50px;
+
+        .c-map__layout {
+            flex-direction: column;
+        }
+
+        .c-map__left {
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .c-map__right {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .c-map__title {
+            font-size: 3rem;
+        }
+
+        .c-map__desc {
+            font-size: 2.3rem;
+            padding-bottom: 50px;
+        }
+
+        .c-map__item :first-child {
+            font-size: 1.6rem;
+        }
+
+        .c-map__item :last-child {
+            font-size: 1.6rem;
+        }
+
+        .c-map__txt {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-map {
+        .c-map__title {
+            font-size: 2.4rem;
+        }
+
+        .c-map__title::before {
+            width: 40px;
+        }
+
+        .c-map__desc {
+            font-size: 1.4rem;
+        }
+
+        .c-map__list {
+            max-width: 355px;
+        }
+
+        .c-map__item :first-child {
+            font-size: 1.25rem;
+
+            width: 90px;
+            height: 40px;
+        }
+
+        .c-map__item :last-child {
+            font-size: 1.25rem;
+        }
+
+        .c-map__txt {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .c-map {
+
+        margin-bottom: 28px;
+
+        .c-map__left {
+            height: 290px;
+        }
+
+        .c-map__title {
+            letter-spacing: 2.5px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+
+        }
+
+        .c-map__list {
+            max-width: 252px;
+
+        }
+
+        .c-map__item {
+            margin-bottom: 6px;
+
+            .u-maplet2 {
+                margin-top: 2px;
+            }
+        }
+
+        .c-map__desc {
+            padding-bottom: 46px;
+        }
+
+        .c-map__right {
+            padding: 35px 0;
+        }
+
+        .c-map__item :first-child {
+            font-size: 1.2rem;
+            font-weight: 400;
+            max-width: 60px;
+            width: 100%;
+            height: 24px;
+
+        }
+
+        .c-map__item :last-child {
+            display: inline-block;
+            margin-left: 12px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            width: 237px;
+            text-align: left;
+        }
+
+        .u-map1 :last-child {
+            transform: translateY(2px);
+            letter-spacing: 2.5px;
+        }
+
+        .u-map2 :last-child {
+            letter-spacing: 1.5px;
+        }
+
+        .u-mapcus :last-child {
+            transform: translateY(-1px);
+            letter-spacing: 0.7px;
+        }
+
+        .c-map__txt {
+            transform: translateY(-2px);
+            margin-left: 88px;
+            letter-spacing: 0.6px;
+        }
+
+
+    }
+}
